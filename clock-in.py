@@ -153,7 +153,7 @@ def main(username, password, times):
 
     if abort:
         print("✅下次一定")
-        #sys.exit(0)
+        sys.exit(0)
     
 
     print("\n[Time] %s" %
