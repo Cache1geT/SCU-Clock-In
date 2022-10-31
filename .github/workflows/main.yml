@@ -1,0 +1,32 @@
+name: ClockIn
+
+on:
+  push:
+    branches: 
+      - master
+  watch:
+    types: started
+  schedule:
+    - cron: 3 1,4,7,11 * * *
+
+jobs:
+  ClockIn:
+    runs-on: ubuntu-latest
+    #if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Install python3
+        uses: actions/setup-python@v3.1.0
+        with:
+          python-version: 3.9
+      - name: Install packages
+        run: |
+          pip3 install requests
+          pip3 install ddddocr
+      - name: Clock In
+        env:
+          ACCOUNT: ${{ secrets.ACCOUNT }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+        run: |
+          python3 clock-in.py ${ACCOUNT} ${PASSWORD} 3
