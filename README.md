@@ -1,10 +1,10 @@
 
 # 声明
-**坚定地清零，科学地打卡，本仓库仅供交流学习** : )
+- **坚定地清零，科学地打卡，本仓库仅供交流学习** : )
 
-打卡脚本修改自CarrotsPie/ZJU-nCov-Hitcarder的开源代码
+- 打卡脚本修改自CarrotsPie/ZJU-nCov-Hitcarder的开源代码
 
-README修改自Di-Zhipeng/ZJU-Clock-In
+- README修改自Di-Zhipeng/ZJU-Clock-In
 
 感谢两位同学开源的代码
 
@@ -14,7 +14,7 @@ README修改自Di-Zhipeng/ZJU-Clock-In
 
 - 只需要一个github账号即可实现自动打卡。
 
-- 默认使用前一天的数据（所在位置，是否做了核酸等）打卡。
+- 默认使用前一天的数据（所在位置，是否做了核酸等）打卡
 
 - 在每天的三个时间点随机打卡，以防打卡时间过于集中；并在每天快结束时补打一次，保证不会漏掉打卡。
 
