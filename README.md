@@ -22,13 +22,7 @@ README修改自Di-Zhipeng/ZJU-Clock-In
 
  **若图片不可见，可查看仓库内的pdf文件**
 
-打卡脚本修改自CarrotsPie/ZJU-nCov-Hitcarder的开源代码
-
-README修改自Di-Zhipeng/ZJU-Clock-In
-
-感谢两位同学开源的代码
-
-如果这个仓库帮到了你，请给我一颗star 哈哈。
+### Step0. 注册github账号
 
 首先你需要拥有一个github账号，直接在左上角注册就行了。
 
