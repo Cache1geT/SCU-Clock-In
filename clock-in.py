@@ -145,7 +145,7 @@ def main(username, password, times):
     abort = True
 
     now = int(time.time())
-    if (now/3600 % 24 + 8) > 18: # 在18:00之后补打一次
+    if ((now/3600 + 8) % 24) > 18: # 在北京时间18:00之后补打一次
         abort = False
         print("🚒补打一个")
 
